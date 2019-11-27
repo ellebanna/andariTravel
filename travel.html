@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Andari Travel Goals</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="calculator.js" type="text/javascript"></script>
+  
+  <style>
+  	body{
+      font-family: times;
+      overflow-x:hidden;
+      margin-right: 10px;
+      margin-left: 10px; 
+    }
+    .navbar-header{
+      height: 100px;
+    }
+    .container-fluid{
+      font-family: times;
+      font-style: italic;
+      font-size: 20px;
+      margin-bottom: 0;
+      background-image: url("photos/contactbg.jpg");
+      border: 5;
+      letter-spacing: 4px;
+      opacity: 0.9;
+      background-size: cover;
+    }
+     #foot{
+      color: blue;
+      font-size: 15px;
+    }
+
+    .logo{
+      margin-top: -60px;
+      margin-left: 50px;
+	}
+    footer img{
+      height: 50px;
+      width: auto;
+    }
+   
+
+    div.container1 {
+      text-align: center;
+      padding: 10px 20px;
+    }
+    
+    td.container {
+      width: 10%;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 25px;
+      display: none;
+    }
+   
+    .philippines{
+      background-image: url("photos/travelbg.jpeg");
+      min-height: 700px;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      background-attachment: fixed;
+    }
+    
+    p{
+      display: none;
+    }
+    .container1 h1:hover{
+      color:gray;
+    }
+    #expenses, #cal,#expenses1{
+      width: 50%;
+      background-color: gray;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+    #exit{
+      width: 20%;
+      background-color: gray;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+    #guide,    #calculate,#guide1{
+      display: none;
+    }
+    .containercal{
+      margin-top: 90px;
+      max-width: 400px;
+      padding: 20px;
+      background-image:url("photos/calcubg.jpg");
+      box-shadow: 0px 0px 10px rgba(0,0,0,5);
+      position: fixed;
+      top: 0;
+    }
+    
+    #screen{
+      width: 140px;
+      display: inline-block;
+      text-align: right;
+      font-family: inherit;
+      margin: 5px;
+      padding: 10px;
+      border-radius: 10px;
+      background: lightgrey;
+    }
+    .buttoncal {
+      cursor: pointer;
+      width: 50px;
+      height: 40px;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 20px; 
+      font-family:inherit;
+      border: none;
+      outline: none;
+      box-shadow: 2px 2px 4px;
+      background-color:  #80ffbf; 
+    }
+     #luzon,#visayas,#mindanao{
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    #visayaspic:hover,#mindanaopic:hover,#luzonpic:hover{
+      opacity: .3;
+    }
+    .char img{
+      height: 300px;
+      width: 400px;
+      border: 1px solid #ddd;
+      border-radius: 50px;
+      padding: 5px;
+      margin-left: 20%;
+    }
+
+ </style>
+
+ </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#myPage"><img class = "logo" src="photos/andari.png"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="AnnabelleEditRad.html">HOME</a></li>
+ 
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">TRAVEL
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#luzon">Luzon</a></li>
+              <li><a href="#visayas">Visayas</a></li>
+              <li><a href="#mindanao">Mindanao</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">CONTACT</a></li>
+
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- FOR LUZON -->
+  <div id="travel" class="text-center">
+    <div class="philippines">
+      <b><h2 style="font-size:50px ; color:white"><br><br>Welcome to Philippines</h2>
+      <h1 style=" color:white ">The Philippines is defined by its emerald rice fields, teeming megacities, graffiti-splashed jeepneys, smouldering volcanoes, bug-eyed tarsiers, fuzzy water buffalo and smiling, happy-go-lucky people.<br><br>Graced by dazzling beaches, year-round sun and numerous opportunities for diving, island-hopping and surfing, the Philippines has long attracted a steady stream of foreign visitors. Yet there’s far more to these islands than sand and snorkelling. Beyond the coastline are places to visit of a different nature; mystical tribal villages, ancient rice terraces, jungle-smothered peaks and crumbling Spanish churches. Look closer and you’ll see the influence of the island’s rich stew of cultures – Islamic, Malay, Spanish and American – in an exuberant array of festivals, tantalizing food and elegant colonial towns that has more in common with Latin America than the rest of Asia.</h1></b>
+    </div>
+    <div id = "luzon">
+      <h3><img id="luzonpic" src="photos/luzon.png" style="height:200px;"></h3>
+      <table>
+
+<!-- FOR BAGUIO -->
+      <td class="container" id="container">
+        <img class="w3-animate-zoom" id="pic" src="photos/baguio.jpg" alt="5 Terre" style="width:100%">
+        <div class="container1"  >
+          <h1 id="baguio">BAGUIO</h1>
+          <p id="descriptionbaguio">Baguio is a city on the Cordillera Administrative Region in the middle of the island of Luzon, in the Philippines. Due to its cool mountain weather, Baguio is considered the "Summer Capital of the Philippines." The city is abundant with pine tree, so it is nicknamed the City of Pines.<br>Baguio City is the favourite destination of locals, tourists and holidaymakers anytime of the year. Because of its altitude the cool weather has remained a perfectly good reason for people to troop to the cool mountains of the Cordillera.
+            <br><button id="expenses">Travel Guide</button>
+          </p>
+          <div id="guide">
+            <h5 style="font-family:times">HOW TO GET TO BAGUIO FROM MANILA<br>
+            Baguio is only 4-6 hours away from Manila, depending on which part of Manila you’re coming from, which route the bus takes, and whether or not it makes a stop along the way. Regular buses usually take Dau Exit (NLEX) or Concepcion Exit (SCTEX) and make at least one stop.</h5>
+              <li>CUBAO TO BAGUIO – VICTORY LINER<br>Regular aircon: P485<br>First class: P800</li>      
+              <li>CUBAO TO BAGUIO – JOYBUS<br>Deluxe: P720<br>Premier: P740</li>
+              <li>PASAY TO BAGUIO – JOYBUS<br>Deluxe: P730<br>Premier: P760</li>
+              <li>PASAY TO BAGUIO – JOYBUS<br>Deluxe: P730<br>Premier: P760</li>
+              <li>PASAY TO BAGUIO – VICTORY LINER<br>Regular aircon: P496<br>First class: P800</li>
+              From the new Victory Liner terminal, you can take a cab to your hotel. If your hotel is near Burnham Park, <b>the fare should be around P70.</b>
+            <h5 style="font-family:times">HOW TO GET AROUND BAGUIO<br><br>
+              <li>Jeepney: Minimum fare is P8.50.</li>
+              <li>Taxi: Flagdown rate is P35.</li><br>
+              GrabTaxi works in Baguio, but the number of available cabs is very limited, so expect to wait a long time to book.
+            <h5 style="font-family:times">THINGS TO DO IN BAGUIO<br><br>
+              <li>LA TRINIDAD STRAWBERRY FARM<br>You can buy strawberries here for <b>P250-P300 per kilo.</b> <br>If you want to pick the berries yourselves, prepare to shell out <b>additional P200.</b></li><br>
+              <li>BENCAB MUSEUM<br>The museum houses the works of Benedicto Reyes Cabrera, a National Artist for Visual Arts, and other Filipino contemporary art masters. <br>Entrance Fee: <b>P120</b><br>Fare: ride a jeepney bound for Asin.<b>P20.</b></li>
+            <h2 style="font-family:times">Want to Calculate Your Expenses?</h2>
+            <button id="cal" >CALCULATOR</button>
+            <button id="exit">EXIT</button>
+          </div>
+        </div>
+      </td>
+<!-- FOR BAGUIO -->
+<!-- FOR PALAWAN -->
+      <td class="container" id="containerb">
+        <img id="pic" class="w3-animate-zoom"  src="photos/palawan.jpg" alt="5 Terre" style="width:100%">
+        <div class="container1" >
+          <h1 id="laiya">Palawan</h1>
+          <p id="descriptionlaiya">Nothing defines Palawan more than the water around it. With seascapes the equal of any in Southeast Asia, and terrestrial and aquatic wildlife, the Philippines’ most sparsely populated region is also the most beguiling. Because of the silhouette of its main island – a long sliver stretching 650km all the way to Borneo – there’s a certain liberating logic to travel here.
+            <br><button id="expenses1">Travel Guide</button>
+          </p>
+          <div id="guide1">
+            <h5 style="font-family:times">HOW TO GET TO PALWAN FROM MANILA<br>
+            Baguio is only 4-6 hours away from Manila, depending on which part of Manila you’re coming from, which route the bus takes, and whether or not it makes a stop along the way. Regular buses usually take Dau Exit (NLEX) or Concepcion Exit (SCTEX) and make at least one stop.</h5>
+              <li>CUBAO TO PALWAN – VICTORY LINER<br>Regular aircon: P485<br>First class: P800</li>      
+              <li>CUBAO TO PALWAN – JOYBUS<br>Deluxe: P720<br>Premier: P740</li>
+              <li>PASAY TO PALWAN – JOYBUS<br>Deluxe: P730<br>Premier: P760</li>
+              <li>PASAY TO PALWAN – JOYBUS<br>Deluxe: P730<br>Premier: P760</li>
+              <li>PASAY TO PALWAN – VICTORY LINER<br>Regular aircon: P496<br>First class: P800</li>
+              From the new Victory Liner terminal, you can take a cab to your hotel. If your hotel is near Burnham Park, <b>the fare should be around P70.</b>
+            <h5 style="font-family:times">HOW TO GET AROUND PALWAN<br><br>
+              <li>Jeepney: Minimum fare is P8.50.</li>
+              <li>Taxi: Flagdown rate is P35.</li><br>
+              GrabTaxi works in Baguio, but the number of available cabs is very limited, so expect to wait a long time to book.
+            <h5 style="font-family:times">THINGS TO DO IN PALWAN<br><br>
+              <li>LA TRINIDAD STRAWBERRY FARM<br>You can buy strawberries here for <b>P250-P300 per kilo.</b> <br>If you want to pick the berries yourselves, prepare to shell out <b>additional P200.</b></li><br>
+              <li>BENCAB MUSEUM<br>The museum houses the works of Benedicto Reyes Cabrera, a National Artist for Visual Arts, and other Filipino contemporary art masters. <br>Entrance Fee: <b>P120</b><br>Fare: ride a jeepney bound for Asin.<b>P20.</b></li>
+            <h2 style="font-family:times">Want to Calculate Your Expenses?</h2>
+            <button id="cal" >CALCULATOR</button>
+            <button id="exit">EXIT</button>
+          </div>
+        </div>
+      </td>
+<!-- FOR PALAWAN -->
+    </table>
+  </div>
+<!-- FOR LUZON -->
+
+<!-- FOR VISAYAS -->
+  <div id = "visayas">
+      <h3><img id="visayaspic" src="photos/visayas.png" style="height:200px;"></h3>
+      <table>
+<!-- FOR BORACAY -->
+      <td class="container" id="containerc">
+        <img class="w3-animate-zoom" id="pic" src="photos/boracay.jpg" alt="5 Terre" style="width:100%">
+        <div class="container1" >
+          <h1 id="boracay">BORACAY</h1>
+          <p id="descriptionboracay">Baguio is a city on the Cordillera Administrative Region in the middle of the island of Luzon, in the Philippines. Due to its cool mountain weather, Baguio is considered the "Summer Capital of the Philippines." The city is abundant with pine tree, so it is nicknamed the City of Pines.<br>Baguio City is the favourite destination of locals, tourists and holidaymakers anytime of the year. Because of its altitude the cool weather has remained a perfectly good reason for people to troop to the cool mountains of the Cordillera.
+            <br><button id="expenses">Travel Guide</button>
+          </p>
+          <div id="guide">
+            <h5 style="font-family:times">HOW TO GET TO BAGUIO FROM MANILA<br>
+            Baguio is only 4-6 hours away from Manila, depending on which part of Manila you’re coming from, which route the bus takes, and whether or not it makes a stop along the way. Regular buses usually take Dau Exit (NLEX) or Concepcion Exit (SCTEX) and make at least one stop.</h5>
+              <li>CUBAO TO BAGUIO – VICTORY LINER<br>Regular aircon: P485<br>First class: P800</li>      
+              <li>CUBAO TO BAGUIO – JOYBUS<br>Deluxe: P720<br>Premier: P740</li>
+              <li>PASAY TO BAGUIO – JOYBUS<br>Deluxe: P730<br>Premier: P760</li>
+              <li>PASAY TO BAGUIO – JOYBUS<br>Deluxe: P730<br>Premier: P760</li>
+              <li>PASAY TO BAGUIO – VICTORY LINER<br>Regular aircon: P496<br>First class: P800</li>
+              From the new Victory Liner terminal, you can take a cab to your hotel. If your hotel is near Burnham Park, <b>the fare should be around P70.</b>
+            <h5 style="font-family:times">HOW TO GET AROUND BAGUIO<br><br>
+              <li>Jeepney: Minimum fare is P8.50.</li>
+              <li>Taxi: Flagdown rate is P35.</li><br>
+              GrabTaxi works in Baguio, but the number of available cabs is very limited, so expect to wait a long time to book.
+            <h5 style="font-family:times">THINGS TO DO IN BAGUIO<br><br>
+              <li>LA TRINIDAD STRAWBERRY FARM<br>You can buy strawberries here for <b>P250-P300 per kilo.</b> <br>If you want to pick the berries yourselves, prepare to shell out <b>additional P200.</b></li><br>
+              <li>BENCAB MUSEUM<br>The museum houses the works of Benedicto Reyes Cabrera, a National Artist for Visual Arts, and other Filipino contemporary art masters. <br>Entrance Fee: <b>P120</b><br>Fare: ride a jeepney bound for Asin.<b>P20.</b></li>
+            <h2 style="font-family:times">Want to Calculate Your Expenses?</h2>
+            <button id="cal" >CALCULATOR</button>
+            <button id="exit">EXIT</button>
+          </div>
+        </div>
+      </td>
+<!-- FOR BORACAY -->
+<!-- FOR TEMPLE OF LEAH -->
+      <td class="container" id="containerd">
+        <img id="pic" class="w3-animate-zoom"  src="photos/leah.jpg" alt="5 Terre" style="width:100%">
+        <div class="container1" >
+          <h1 id="leah">TEMPLE OF LEAH</h1>
+          <p id="descriptionleah">Laiya is a sensational part of Batangas province in which I will need to spend a bit more time on. Located in the first class municipality of San Juan on the Eastern side of Batangas, Laiya is famous for its long stretch of white sand beaches. This is a beautiful location that also features some rugged cliffs and clean water. It draws a strong number of local tourists but funnily enough, I haven’t seen too many foreigners there, at least when I have been there.
+            <br><button id="expenses">Travel Guide</button>
+          </p>
+          
+          
+        </div>
+      </td>
+    </table>
+  </div>
+
+  <div id = "mindanao">
+      <h3><img id="mindanaopic" src="photos/mindanao.png" style="height:200px;"></h3>
+      <table>
+      <td class="container" id="container">
+        <img class="w3-animate-zoom" id="pic" src="https://d1sttufwfa12ee.cloudfront.net/uploads/deal/thumb/85664.jpg" alt="5 Terre" style="width:100%">
+        <div class="container1" >
+          <h1 id="baguio">BAGUIO</h1>
+          <p id="descriptionbaguio">Baguio is a city on the Cordillera Administrative Region in the middle of the island of Luzon, in the Philippines. Due to its cool mountain weather, Baguio is considered the "Summer Capital of the Philippines." The city is abundant with pine tree, so it is nicknamed the City of Pines.<br>Baguio City is the favourite destination of locals, tourists and holidaymakers anytime of the year. Because of its altitude the cool weather has remained a perfectly good reason for people to troop to the cool mountains of the Cordillera.
+            <br><button id="expenses">Travel Guide</button>
+          </p>
+          <div id="guide">
+            <h5 style="font-family:times">HOW TO GET TO BAGUIO FROM MANILA<br>
+            Baguio is only 4-6 hours away from Manila, depending on which part of Manila you’re coming from, which route the bus takes, and whether or not it makes a stop along the way. Regular buses usually take Dau Exit (NLEX) or Concepcion Exit (SCTEX) and make at least one stop.</h5>
+              <li>CUBAO TO BAGUIO – VICTORY LINER<br>Regular aircon: P485<br>First class: P800</li>      
+              <li>CUBAO TO BAGUIO – JOYBUS<br>Deluxe: P720<br>Premier: P740</li>
+              <li>PASAY TO BAGUIO – JOYBUS<br>Deluxe: P730<br>Premier: P760</li>
+              <li>PASAY TO BAGUIO – JOYBUS<br>Deluxe: P730<br>Premier: P760</li>
+              <li>PASAY TO BAGUIO – VICTORY LINER<br>Regular aircon: P496<br>First class: P800</li>
+              From the new Victory Liner terminal, you can take a cab to your hotel. If your hotel is near Burnham Park, <b>the fare should be around P70.</b>
+            <h5 style="font-family:times">HOW TO GET AROUND BAGUIO<br><br>
+              <li>Jeepney: Minimum fare is P8.50.</li>
+              <li>Taxi: Flagdown rate is P35.</li><br>
+              GrabTaxi works in Baguio, but the number of available cabs is very limited, so expect to wait a long time to book.
+            <h5 style="font-family:times">THINGS TO DO IN BAGUIO<br><br>
+              <li>LA TRINIDAD STRAWBERRY FARM<br>You can buy strawberries here for <b>P250-P300 per kilo.</b> <br>If you want to pick the berries yourselves, prepare to shell out <b>additional P200.</b></li><br>
+              <li>BENCAB MUSEUM<br>The museum houses the works of Benedicto Reyes Cabrera, a National Artist for Visual Arts, and other Filipino contemporary art masters. <br>Entrance Fee: <b>P120</b><br>Fare: ride a jeepney bound for Asin.<b>P20.</b></li>
+            <h2 style="font-family:times">Want to Calculate Your Expenses?</h2>
+            <button id="cal" >CALCULATOR</button><button id="exit">EXIT</button>
+          </div>
+          
+        </div>
+      </td>
+      <td class="container" id="containerb">
+        <img id="pic" class="w3-animate-zoom"  src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_768/https://www.deztreks.com/wp-content/uploads/2018/03/IMG_2047-min-768x576.jpg" alt="5 Terre" style="width:100%">
+        <div class="container1" >
+          <h1 id="laiya">Laiya Batangas</h1>
+          <p id="descriptionlaiya">Laiya is a sensational part of Batangas province in which I will need to spend a bit more time on. Located in the first class municipality of San Juan on the Eastern side of Batangas, Laiya is famous for its long stretch of white sand beaches. This is a beautiful location that also features some rugged cliffs and clean water. It draws a strong number of local tourists but funnily enough, I haven’t seen too many foreigners there, at least when I have been there.
+            <br><button id="expenses">Travel Guide</button>
+          </p>
+          
+          
+        </div>
+      </td>
+    </table>
+  </div>
+  <center><div class="containercal" id="calculate">
+        <h5><b>Input Your Expenses<b></h5>
+        <div>
+            <button class="buttoncal" onclick="clearall()">CE</button>
+            <div id="screen">0</div>           
+        </div>
+        <div>
+            <button class="buttoncal" onclick="display('7')">7</button>
+            <button class="buttoncal" onclick="display('8')">8</button>
+            <button class="buttoncal" onclick="display('9')">9</button>
+            <button class="buttoncal" onclick="display('+')">+</button>
+        </div>
+        <div>
+            <button class="buttoncal" onclick="display('4')">4</button>
+            <button class="buttoncal" onclick="display('5')">5</button>
+            <button class="buttoncal" onclick="display('6')">6</button>
+            <button class="buttoncal multiply" onclick="display('*')">*</button>
+        </div>
+        <div>
+            <button class="buttoncal" onclick="display('1')">1</button>
+            <button class="buttoncal" onclick="display('2')">2</button>
+            <button class="buttoncal" onclick="display('3')">3</button>
+            <button class="buttoncal" onclick="display('-')">-</button>
+        </div>
+        <div>           
+            <button class="buttoncal decimal" onclick="display('.')">.</button>
+            <button class="buttoncal zero" onclick="display('0')">0</button>
+            <button class="buttoncal" onclick="display('/')">/</button>
+            <button class="buttoncal equal" onclick="equal()">=</button>
+        </div>
+    </div></center>
+  <br>
+
+
+    
+    <table class="char">
+      <td>
+        <img src="photos/travelpic1.png">
+      </td>
+      <td>
+        <img src="photos/travelpic2.jpg">
+      </td>
+      <td>
+        <img src="photos/travelpic3.jpg">
+      </td>
+    </table> 
+  <footer class= "container-fluid" style="text-align:center">
+    <h2 id="foot">Connect With Us On  <img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c545.png"><img src="http://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19762.png"> <img src="http://pngimg.com/uploads/twitter/twitter_PNG32.png"><img src="https://lh3.googleusercontent.com/-SnCybLHWVNc/XOCmoezo50I/AAAAAAAAAqg/eJW1tH65YScyjWt1amrUcTIa-GAF1MUhwCK8BGAs/s512/2019-05-18.png"></h2>
+  </footer>
+</body>
+
+
+<script>
+$(document).ready(function(){
+  $("#luzonpic").click(function(){
+    $("#container").show();
+    $("#container").animate({
+      height: '400px',
+      width: '600px'
+    });
+    $("#containerb").show();
+    $("#containerb").animate({
+      height: '400px',
+      width: '600px'
+    });
+  });
+  $("#visayaspic").click(function(){
+    $("#containerc").show();
+    $("#containerc").animate({
+      height: '400px',
+      width: '600px'
+    });
+    $("#containerd").show();
+    $("#containerd").animate({
+      height: '400px',
+      width: '600px'
+    });
+  });
+});
+/*$(document).ready(function(){
+  $("#luzonpic").click(function(){
+    
+  });
+});*/
+$(document).ready(function(){
+  $("#laiya").click(function(){
+    $("#descriptionlaiya").slideToggle();
+  });
+});
+$(document).ready(function(){
+  $("#baguio").click(function(){
+    $("#descriptionbaguio").slideToggle();
+  });
+});
+$(document).ready(function(){
+  $("#boracay").click(function(){
+    $("#descriptionboracay").slideToggle();
+  });
+});
+$(document).ready(function(){
+  $("#leah").click(function(){
+    $("#descriptionleah").slideToggle();
+  });
+});
+$(document).ready(function(){
+  $("#expenses").click(function(){
+    $("#guide").fadeIn();
+  });
+  $("#expenses1").click(function(){
+    $("#guide1").fadeIn();
+  });
+});
+$(document).ready(function(){
+  $("button#cal").click(function(){
+    $("#calculate").show();
+    $("#calculate").animate({left: '550px'});
+  });
+});
+$(document).ready(function(){
+  $("button#exit").click(function(){
+    $("#guide").hide();
+    $("#calculate").hide();
+  });
+})
+$(document).ready(function(){
+  $("button#exit").click(function(){
+    $("#guide1").hide();
+    $("#calculate").hide();
+  });
+})
+  
+
+
+</script>
+
+</body>
+</html>

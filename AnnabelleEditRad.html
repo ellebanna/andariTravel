@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Andari Travel Goals</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="photos/andari.png" rel="icon-bar" type="icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      font-family: times;
+      overflow-x:hidden;
+      margin-right: 10px;
+      margin-left: 10px; 
+    } 
+
+    #myCarousel img{
+      height: 750px;
+      width: 1700px;
+    }
+    #myCarousel h3{
+      font-size: 50px;
+      font-family: times;
+      font-style: italic;
+      color: white;
+    }
+    #myCarousel p{
+      font-size: 40px;
+      font-family: times;
+      font-style: italic;
+      color: white;
+    }
+    .navbar-header{
+      height: 100px;
+    }
+    .container-fluid{
+      font-family: times;
+      font-style: italic;
+      font-size: 20px;
+      margin-bottom: 0;
+      background-image: url("photos/contactbg.jpg");
+      border: 5;
+      letter-spacing: 4px;
+      opacity: 0.9;
+      background-size: cover;
+    }
+     #foot{
+      color: blue;
+      font-size: 15px;
+    }
+
+    .logo{
+      margin-top: -60px;
+      margin-left: 50px;
+    }
+    div.container {
+      width: 50%;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 25px;
+    }
+   .reasons{
+      width: 50%;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 25px;
+      margin-left: 25%;
+    }
+    button {
+      width: 50%;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+    div.container1 {
+      text-align: center;
+      padding: 10px 20px;
+    }
+    .container img:hover{
+      opacity: .8;
+    }
+    .voyage{
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+    #travel{
+      font-family: times;
+      font-variant: italic;
+    }
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    .panel img{
+      height: 300px;
+      width: auto;
+    }
+    table img{
+      height: 300px;
+      width: auto;
+      border: 1px solid #ddd;
+      border-radius: 50px;
+      padding: 5px;
+    }
+    footer img{
+      height: 50px;
+      width: auto;
+    }
+
+    div .reasons{
+  background-color: red;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+    
+    
+
+
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#myPage"><img class = "logo" src="photos/andari.png"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#myPage">HOME</a></li>
+          <li><a href="travel.html">TRAVEL</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- This div is for the Slider  -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel"><!-- class that make the pictures slide >> attribute activates the carousel.-->
+    <!-- Indicators -->
+    <ol class="carousel-indicators"><!-- The indicators are the little dots at the bottom of each slide (which indicates how many slides there are in the carousel, and which slide the user is currently viewing). -->
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="photos/slidebeach.jpg" alt="New York" >
+        <div class="carousel-caption">
+          <h3>BEACH</h3>
+          <p>“Palm trees. Ocean Breeze. Salty Air. Sunkissed Hair. Endless Summer. Take me there.”</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="photos/slidemountain.jpg" alt="Chicago" >
+        <div class="carousel-caption">
+          <h3>MOUNTAINS</h3>
+          <p>“Stop staring at mountains. Climb them instead, yes, it’s a harder process but it will lead you to a better view.”</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="photos/slidecity.jpg" alt="Los Angeles" >
+        <div class="carousel-caption">
+          <h3>CITIES</h3>
+          <p>“Every time you fade into the night, <br>just remember nothings Brighter. You're the City Light!”</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div id="travel" class="text-center">
+    <h1><em>VOYAGE!!!</em></h1>
+    <table class= "voyage">
+      <td><img style = "height: 300px" src="photos/homekenya.jpg"></td>
+      <td><p style="font-size: 30px">Why do people leave their homes and voyage all over the globe? The reasons why people love to travel are varied. They’re also very personal. Take a look at these 5 motivations, and see which ones ring true for you.</p></td>
+    </table><br>
+    <div class ="reasons">
+      <h2 style="height:50px">Reasons Why We Love Travelling</h2>
+    </div>
+    <div>
+      <button class= "accordion" style= "height:50px">1. Challenging yourself</button>
+      <h4 class= "panel"><img src="photos/accordion1.jpg">
+        <br><br>You might feel like you’re stuck in a rut in your daily life. Or you’re yearning for something exciting and different. You’re craving new experiences and new challenges. Travel is the ideal place to test yourself. It pushes people to their limits and gets them outside their comfort zone.
+        <br><br>
+        You’ll discover how resourceful you are when you’re exposed to new places, people and experiences. Maybe it’s finding your way around a busy city. Or ordering a meal when you don’t speak the language. Or zip-lining.
+        <br><br>
+        You’ll feel pride when you finish your trip successfully. Overcoming challenges will bring you joy and energy for future tests. You’ll realize how capable you are and build your confidence.</h4>
+      <button class= "accordion" style= "height:50px">2. Learning</button>
+      <h4 class= "panel"><img src="photos/accordion2.jpg">
+        <br><br>Learning is a strong reason why people love to travel.  They want to experience something unfamiliar and leave with new skills or knowledge.
+        <br><br>
+        Seeing the world is more educational than a high school or college class. This condensed crash course in discovering how the rest of the world lives actually will cover subjects like history, geography and sociology. Every destination has something unique to teach visitors, and immersing themselves in a completely different world is the best learning experience.
+        <br><br>
+        People may travel to learn something specific: a new language, a new cuisine, aspects of a different culture, or a deeper appreciation of faith or spirituality. As a bonus, they’ll take away more than their specific goal. They’ll discover totally different ways of doing things. They’ll also gain awareness of new customs, cultures, people and places.
+        <br><br>
+        And because you’re actually experiencing this learning in real life, not reading it in a textbook, it will stay with you for a long time. You’ll gain a deep sense of satisfaction with the new skills you’ve learned – and new insights you’ve gained.</h4>
+      <button class= "accordion" style= "height:50px">3. Expanding your perspective</button>
+      <h4 class= "panel"><img src="photos/accordion3.jpg">
+        <br><br>Another reason why people love to travel: it helps open your mind. You realize that there’s no one way to live life. Meeting people from other places will show you that your world view isn’t the same as everyone else’s.
+        <br><br>
+        You can’t imagine how different life is in another place until you see for yourself. Everything from work to family to beliefs to interests is not what you might expect from your own experience. The different setting will also help you discover and consider fresh ideas you hadn’t thought of before. You’ll come home with different notions and possibilities.
+        <br><br>
+        By being exposed to new places, people and cultures, you’ll develop a wider world view. And that will make you a better-rounded global citizen. It’s a great reward and big reason why people love to travel.</h4>
+      <button class= "accordion" style= "height:50px">4. Building and strengthening relationships</button>
+      <h4 class= "panel"><img src="photos/accordion4.jpg">
+        <br><br>The shared experience of travel brings people together. A family getaway, a romantic trip, or long weekend with the girls or guys can strengthen important bonds.
+        <br><br>
+        Travel is a special way to deepen friendships as well. Whether it’s a quick ski break with co-workers or a week-long sun-and-sand getaway with your high school gang, travel will remind you why you became friends with them in the first place, and how good it is to spend focused time together.
+        <br><br>
+        Travel is also a great opportunity to make new friends – either fellow travelers or locals. Meeting and befriending new people is a valuable travel benefit. And once you’ve bonded, new possibilities for future travel unfold – either to visit them or journey with them.</h4>
+      <button class= "accordion" style= "height:50px">5. Relaxing and rejuvenating</button>
+      <h4 class= "panel"><img src="photos/accordion5.jpg">
+        <br><br>A restful vacation is just what you need to renew yourself. In this year’s Virtuoso Luxe Report, 44 percent of respondents named this as a reason why people love to travel.
+        <br><br>
+        A relaxing natural setting and good weather are common ingredients for the R&R-focused trip. But everyone’s idea of the perfect rejuvenating vacation is different. One person might want to trek through a rainforest. Another may want to lie poolside at a Mexican resort. Yet another might opt for a wellness retreat in the mountains.
+        <br><br>
+        What should you do when you’re there? Nothing, really. Relax and be present in the moment. Let sensations like the lapping water and the warmth of the sun, along with the sound of waves, recharge your batteries. Live day to day: focus on where you want to go sightseeing (if you decide to leave the beach), what activities you want to pursue (if any), what you’re going to eat, what souvenirs you want to buy. Travel helps your mind and body reboot in a way you can’t achieve at home. In fact, 86 percent of people believe it improves their mood and outlook on life.</h4>
+    </div> 
+    <table>
+      <td>
+        <img src="photos/homepic1.jpeg">
+      </td>
+      <td>
+        <img src="photos/homepic2.jpg">
+      </td>
+      <td>
+        <img src="photos/homepic3.jpg">
+      </td>
+    </table> 
+    <h1>TRAVEL DIARY IN PHILIPPINES</h1><h3>Enjoy Watching!!</h3>
+    <iframe width="697" height="392" src="https://www.youtube.com/embed/ETFaXJb0xp8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <footer class= "container-fluid" style="text-align:center">
+    <h2 id="foot">Connect With Us On  <img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c545.png">  <img src="http://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19762.png"> <img src="http://pngimg.com/uploads/twitter/twitter_PNG32.png">  <img src="https://lh3.googleusercontent.com/-SnCybLHWVNc/XOCmoezo50I/AAAAAAAAAqg/eJW1tH65YScyjWt1amrUcTIa-GAF1MUhwCK8BGAs/s512/2019-05-18.png"></h2>
+  </footer>
+    
+
+</body>
+
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+
+</script>
+
+</body>
+</html>
